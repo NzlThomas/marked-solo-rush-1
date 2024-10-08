@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+:root {
+    --background-color: rgb(245, 245, 245);
+    --tpn-color: rgb(68, 135, 184);
+    --tpn-border: rgb(35, 90, 129);
+    --berserk-color: rgb(166, 85, 85);
+    --berserk-border: rgb(129, 51, 51);
+    --shadow-color: rgb(59, 59, 59);
+    --shadow-border: rgb(24, 23, 23);
+    --titles: "Kanit";
+    --paragraphs: "Montserrat";
+
+}
+
+body {
+    margin: 0;
+}
+
+/* #background {
+    background-color: var(--background-color);
+} */
+
+p {
+    font-family: var(--paragraphs);
+    font-size: 13px;
+}
+
+h1, h2, h3 {
+    font-family: var(--titles);
+    margin-top: 1em;
+    margin-left: 0.3em;
+}
+
+nav {
+    background-color: var(--shadow-border);
+    padding: 0.1rem;
+    margin-bottom: 2em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#main-title {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pitch {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+#TPN {
+    background-color: var(--tpn-color);
+    color: white;
+    /* padding-top: 0.1em; */
+    width: 90%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 2em;
+}
+
+#title-tpn {
+    background-color: var(--tpn-border);
+    margin: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-top: 0.1em;
+    padding-left: 0.3em;
+
+}
+
+img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+#tpn-img {
+    margin-left: 1em;
+}
+
+.informations {
+    font-size: 12px;
+    margin-top: 0em;
+    margin-left: 0.7em;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+#p-left {
+    margin-left: 1em;
+    width: 85%;
+}
+
+.left-iframe {
+    border: 0;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+.right-iframe {
+    border: 0;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+button {
+    color: var(--shadow-color);
+    background-color: white;
+    margin-bottom: 1em;
+    border: none;
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+
+#SH {
+    background-color: var(--shadow-color);
+    color: white;
+    /* padding-top: 0.1em; */
+    width: 90%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: right;
+    margin-left: 2.5em;
+    margin-bottom: 2em;
+}
+
+#title-sh {
+    background-color: var(--shadow-border);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top: 0.1em;
+    padding-right: 0.5em;
+    margin: 0em;
+}
+
+#sh-img {
+    margin-right: 1em;
+}
+
+#p-right {
+    margin-right: 0.2em;
+    text-align: right;
+    margin-top: 0;
+    margin-right: 1em;
+    font-size: 12px;
+}
+
+#paragraph-sh {
+    font-size: 12px;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding-left: 2em;
+}
+
+#BRK {
+    background-color: var(--berserk-color);
+    color: white;
+    /* padding-top: 0.1em; */
+    width: 90%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 2em;
+}
+
+#title-brk {
+    background-color: var(--berserk-border);
+    margin: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-top: 0.1em;
+    padding-left: 0.3em;
+
+}
+
+#brk-img {
+    margin-left: 1em;
+}
+
+#who {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    font-size: 13px;
+}
+
+#who-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: var(--shadow-border);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-responsive {
+    opacity: 0;
+    width: 0%;
+}
+
+.img-mobile {
+    opacity: 1;
+}
+
+@media screen and (width >= 1024px) {
+
+   /* MAIN TITLE ET PITCH */
+
+    #main-title {
+        font-size: 3em;
+    }
+    
+    #pitch {
+        font-size: 1.2em;
+        width: 25%;
+        margin: 0 auto;
+        margin-top: 5em;
+        margin-bottom: 7em;
+    }
+
+    nav {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    /* THE PROMISED NEVERLAND */
+
+    #TPN {
+        width: 60%;
+        margin-right: 5em;
+    }
+
+    /* CACHER IMAGES */
+
+    .img-mobile {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .img-responsive {
+        opacity: 1;
+        width: 20%;
+    }
+
+    /* CACHER IMAGES */
+
+    #tpn-rangée {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10em;
+    }
+
+    #tpn-responsive {
+        width: 70%;
+        /* margin-left: 12em; */
+        display: block;
+        margin: 0 auto;
+    }
+
+    #title-tpn, #title-sh, #title-brk {
+        font-size: 2.3em;
+    }
+
+    .p-responsive-left {
+        font-size: 1em;
+    }
+
+    .informations {
+        font-size: 1em;
+    }
+
+    .button {
+        opacity: 0;
+        width: 0%;
+    }
+
+    /* SHADOW HOUSE */
+
+
+    #SH {
+        width: 60%;
+    }
+
+    #sh-rangée {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 10em;
+    }
+
+    #sh-responsive {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #p-right {
+        font-size: 1em;
+    }
+
+    #paragraph-sh {
+        font-size: 1em;
+        margin-left: 2em;
+    }
+
+    /* BERSERK */
+
+    #BRK {
+        width: 60%;
+        margin-right: 10em;
+    }
+
+    #brk-rangée {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .img-responsive {
+        width: 70%;
+    }
+
+    #brk-responsive {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    iframe {
+        width: 50%;
+        height: 23em;
+    }
+
+    /* MAIS T'ES QUI EN FAIT */
+
+
+    #who-title {
+        font-size: 2em;
+        width: 25%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        margin-top: 4em;
+
+    }
+
+    #who {
+        font-size: 1.2em;
+        width: 25%;
+        margin: 0 auto;
+        margin-bottom: 6em;
+    }
+
+    #align {
+        text-align: center;
+    }
+
+
+}
